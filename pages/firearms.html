@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Futuretech Corp</title>
+    <link rel="icon" href="/images/ico_logo/futuretech.png" type="image/icon type">
+    <link href='https://fonts.googleapis.com/css?family=Zen Dots' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/css/firearms.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</head>
+
+<body>
+    <div id="header" class="head-container">
+        <div id="navLogo" class="logobg">
+            <img class="animate__animated animate__fadeInUpBig" src="/images/ico_logo/futuretech.png" alt="error">
+        </div>
+       
+        <nav class="navbar navbar-expand-sm  navbar-dark">
+            <a class="nav-link" href="/index.html" style="font-size: inherit; margin-left: 25px;">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="navbar-brand active-link" href="/pages/firearms.html">Firearms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/accs.html">Ammu and accesories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<!--                                                     -->
+
+<div id="m-container" class="main-container container">
+    <div id="filter">
+        <div class="select">
+            <input class="form-check-input" type="checkbox" value="" id="556">
+            <p class="forClick">5,56 nato</p>
+        </div>
+        <div class="select">
+            <input class="form-check-input" type="checkbox" value="" id="570">
+            <p class="forClick">5,70 FN</p>
+        </div>
+        <div class="select">
+            <input class="form-check-input" type="checkbox" value="" id="762">
+            <p class="forClick">7.62</p>
+        </div>
+        <div class="select">
+            <button class="btn btn-success" onclick="filter()">Filter</button>                   
+        </div>
+        <div class="select">
+            <button class="btn btn-danger" onclick="reset()">Reset</button>                   
+        </div>
+    </div>
+    <div class="row">
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/guns/ak47 7,62.jpg" class="card-img-top" alt="it should be a gun photo here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">AK-47</h5>
+                <p class="card-text">Magazine capacity-30/35/40 rounds</p>
+                <p class="card-text ammu">Ammunition type - <span class="ammuSize">7,62x39mm</span></p>
+                <p class="card-text price">Price - <span class="price">1500</span> dollars</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/guns/famas 5-56.jpg" class="card-img-top" alt="it should be a gun photo here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">FA-MAS</h5>
+                <p class="card-text">Magazine capacity-25/30 rounds</p>
+                <p class="card-text ammu">Ammunition type - <span class="ammuSize">5,56x45mm</span></p>
+                <p class="card-text price">Price - <span class="price">2000</span> dollars</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/guns/g36 5-56.jpg" class="card-img-top" alt="it should be a gun photo here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">Heckler&Koch G36 - sniper package</h5>
+                <p class="card-text">Magazine capacity-30 rounds</p>
+                <p class="card-text ammu">Ammunition type - <span class="ammuSize">5,56x45mm</span></p>
+                <p class="card-text price">Price - <span class="price">4000</span> dollars</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/guns/m16 5-56.jpg" class="card-img-top" alt="it should be a gun photo here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">M-16</h5>
+                <p class="card-text">Magazine capacity-20/30 rounds</p>
+                <p class="card-text ammu">Ammunition type - <span class="ammuSize">5,56x45mm</span></p>
+                <p class="card-text price">Price - <span class="price">1750</span> dollars</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/guns/mk47 5.7.jpg" class="card-img-top" alt="it should be a gun photo here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">CMMG MK-47 Mutant AKM 2 CA</h5>
+                <p class="card-text">Magazine capacity-30 rounds</p>
+                <p class="card-text ammu">Ammunition type - <span class="ammuSize">7,62x39mm</span></p>
+                <p class="card-text price">Price - <span class="price">7800</span> dollars</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/guns/p90 5.7.jpg" class="card-img-top" alt="it should be a gun photo here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">FN PS-90</h5>
+                <p class="card-text">Magazine capacity-10/50 rounds</p>
+                <p class="card-text ammu">Ammunition type - <span class="ammuSize">5,70x28mm</span></p>
+                <p class="card-text price">Price - <span class="price">2500</span> dollars</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/guns/ruger 7,62.jpg" class="card-img-top" alt="it should be a gun photo here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">Ruger M77-II- 7,62x39 wood version</h5>
+                <p class="card-text">Magazine capacity-5 rounds</p>
+                <p class="card-text ammu">Ammunition type - <span class="ammuSize">7,62x39mm</span></p>
+                <p class="card-text price">Price - <span class="price">2600</span> dollars</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/guns/ruger 5.7.jpg" class="card-img-top" alt="it should be a gun photo here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">Ruger-57 pistol</h5>
+                <p class="card-text">Magazine capacity-10/20 rounds</p>
+                <p class="card-text ammu">Ammunition type - <span class="ammuSize">5,70x28mm</span></p>
+                <p class="card-text price">Price - <span class="price">1500</span> dollars</p>
+            </div>
+        </div>
+
+        
+    </div>    
+</div>
+<!--                                                     -->
+    <div style="margin-bottom: 100px ;"></div>
+    <footer class ="fixed-bottom footer-container">
+        <div class="footer-logo"> 
+            <img src="/images/ico_logo/futuretech.png" alt="futuretech">
+        </div>    
+            <div class="socials" >
+                <p>
+                    <i class="bi bi-facebook"><span class="socials-names">Facebook</span></i>
+                </p>
+                <p>
+                    <i class="bi bi-instagram"><span class="socials-names">Instagram</span></i>
+                </p>
+                <p>
+                    <i class="bi bi-youtube"><span class="socials-names">Youtube</span></i>
+                </p>
+            </div>
+            <div class="legal">
+                <h6>Contact</h6>
+                <p>Adress: 400 Louisville Rd, Frankfort, INDIANA</p>
+                <p>E-mail: futuretech@shop.com</p>
+                <p>Phone: 555-221-7415</p>
+
+
+            </div>
+    </footer>
+
+
+
+
+    <script src="/script/frontscripts.js"></script>
+    <script src="/script/firearms.js"></script>
+
+</body>
+
+</html>

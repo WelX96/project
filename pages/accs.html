@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Futuretech Corp</title>
+    <link rel="icon" href="/images/ico_logo/futuretech.png" type="image/icon type">
+    <link href='https://fonts.googleapis.com/css?family=Zen Dots' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/css/accs.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</head>
+
+<body>
+    <div id="header" class="head-container">
+        <div id="navLogo" class="logobg">
+            <img class="animate__animated animate__fadeInUpBig" src="/images/ico_logo/futuretech.png" alt="error">
+        </div>
+       
+        <nav class="navbar navbar-expand-sm  navbar-dark">
+            <a class="nav-link" href="/index.html" style="font-size: inherit; margin-left: 25px;">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/firearms.html">Firearms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand active-link" href="/pages/accs.html">Ammu and accesories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<!--                                                     -->
+
+<div id="m-container" class="main-container container">
+    <div id="filter">
+        <div class="select">
+            <select class="form-select mb-2" aria-label="Default select example" id="pret">
+                <option value="up" selected>Price : Low to High</option>
+                <option value="down">Price : High to Low</option>
+            </select>
+        </div>
+        <div class="select">
+            <button class="btn btn-success" onclick="sort()">Sort</button>                   
+        </div>
+    </div>
+    <div class="row">
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/accs/556.jpg" class="card-img-top" alt="it should be something here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">5,56x45mm ammunition</h5>
+                <p class="card-text">100 rounds package</p>
+                <p class="card-text">Made in Italy</p>
+                <p class="card-text price">Price - <span class="price">250</span> dollars/pack</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/accs/570.jpg" class="card-img-top" alt="it should be something here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">5,70x28mm ammunition</h5>
+                <p class="card-text">100 rounds package</p>
+                <p class="card-text">Made in Belgium</p>
+                <p class="card-text price">Price - <span class="price">300</span> dollars/pack</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/accs/762.jpg" class="card-img-top" alt="it should be something here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">7,62x39mm ammu</h5>
+                <p class="card-text">200 rounds package</p>
+                <p class="card-text ">Made in Ukraine/Georgia</p>
+                <p class="card-text price">Price - <span class="price">200</span> dollars</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/accs/case.jpg" class="card-img-top" alt="it should be something here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">Universal gun case</h5>
+                <p class="card-text">L-6 feet 6/47 inches W-2 feet 5/17 inches</p>
+                <p class="card-text">Made in USA</p>
+                <p class="card-text price">Price - <span class="price">300</span> dollars</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/accs/clean.jpg" class="card-img-top" alt="it should be something here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">Gloryfire cleaning kit-elite version </h5>
+                <p class="card-text">Includes velcro tape</p>
+                <p class="card-text">Made in China</p>
+                <p class="card-text price">Price - <span class="price">250</span> dollars</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/accs/harris prc.jpg" class="card-img-top" alt="it should be something here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">Harris PRC 152</h5>
+                <p class="card-text">Dual-welding portable station</p>
+                <p class="card-text">Made in USA</p>
+                <p class="card-text price">Price - <span class="price">150</span> dollars</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/accs/safari.jpg" class="card-img-top" alt="it should be something here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">Safariland SLS Tactical Holster</h5>
+                <p class="card-text">STX material finish</p>
+                <p class="card-text">Made in United Kingdom></p>
+                <p class="card-text price">Price - <span class="price">100</span> dollars</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/accs/target.jpg" class="card-img-top" alt="it should be something here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">Basic target package</h5>
+                <p class="card-text">100 target sheets, 2 metal frames</p>
+                <p class="card-text">Made in USA</p>
+                <p class="card-text price">Price - <span class="price">180</span> dollars/pack</p>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 " style="background-color: rgba(192, 192, 192, 0.75);">
+            <img src="/images/accs/vest.jpg" class="card-img-top" alt="it should be something here...shame">
+            <div class="card-body">
+                <h5 class="card-title text-info bg-secondary">Tactical bulletproof vest</h5>
+                <p class="card-text">Different models-made of kevlar</p>
+                <p class="card-text">Made in USA</p>
+                <p class="card-text price">Price - <span class="price">250</span> dollars</p>
+            </div>
+        </div>
+
+        
+    </div>    
+</div>
+<!--                                                     -->
+    <div style="margin-bottom: 100px ;"></div>
+    <footer class ="fixed-bottom footer-container">
+        <div class="footer-logo"> 
+            <img src="/images/ico_logo/futuretech.png" alt="futuretech">
+        </div>    
+            <div class="socials" >
+                <p>
+                    <i class="bi bi-facebook"><span class="socials-names">Facebook</span></i>
+                </p>
+                <p>
+                    <i class="bi bi-instagram"><span class="socials-names">Instagram</span></i>
+                </p>
+                <p>
+                    <i class="bi bi-youtube"><span class="socials-names">Youtube</span></i>
+                </p>
+            </div>
+            <div class="legal">
+                <h6>Contact</h6>
+                <p>Adress: 400 Louisville Rd, Frankfort, INDIANA</p>
+                <p>E-mail: futuretech@shop.com</p>
+                <p>Phone: 555-221-7415</p>
+
+
+            </div>
+    </footer>
+
+
+
+
+    <script src="/script/frontscripts.js"></script>
+    <script src="/script/accs.js"></script>
+
+</body>
+
+</html>

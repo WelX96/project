@@ -1,0 +1,244 @@
+ /*SETARILE GENERALE*/
+*
+{
+    font-family: 'Zen Dots';
+    font-size: 1.85vh;
+    margin: 0;
+    color: white;
+}
+
+body
+{
+    background-image: url("../images/background/camobg.jpg") ;
+    background-repeat: repeat;
+    background-size: 25%;
+
+}
+
+
+/*SETARI HEADER/NAVIGATIE*/
+.logobg
+{
+    
+    width: 100%;
+    visibility: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header 
+{
+    background: linear-gradient(to top left, darkgreen,rgb(0, 0, 0));
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.25s;
+    z-index: 2;
+}
+
+.nav-ani:hover{
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+}
+
+.active-link{
+    font-size: 2.25vh !important;
+}
+
+/*SETARI MEDIA QUERY*/
+@media only screen and (max-width: 575px) 
+{
+    .logobg 
+    {
+        visibility: hidden;
+        display: none;
+    };
+
+    
+    .main-container
+    {
+        margin: 0%;
+    }
+    .prompt
+    {
+    height: auto !important;
+    }
+    .prompt > img 
+    {
+   
+        height:150px !important;
+    }
+    .prompt > iframe 
+    {
+        height:150px !important;
+    }
+
+
+    .socials-names{
+        display: none;
+    }
+    .footer-logo {
+        margin-right: 25px;
+    }
+
+}
+
+@media only screen and (max-width:767px)
+{
+    .footer-logo img
+    {
+        height: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 991px) 
+{
+    
+    .prompt > video 
+    {
+        width: 100%;
+        height: auto;
+        border-radius: 15px 15px 0 0 !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+ 
+/*SETARI MAIN CONTAINER/ZONA PRINCIPALA*/
+.main-container
+{
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom: 0;
+    height: 100%;
+}
+.prompt 
+{
+    text-align: justify;
+    background: rgba(117, 117, 117,0.5);
+    background-size: cover;
+    border-radius: 15px;
+    margin:10px;
+    font-size: 1vh;
+}
+
+.prompt > img 
+{
+    width: 100%;
+    /*height:35%;*/
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 10px;
+}
+
+.prompt > video 
+{
+    height: 400px;
+    border-radius: 15px 0 0 15px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.prompt > iframe 
+{
+    width: 100%;
+    height: 200px !important;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 10px;
+}
+
+p>i>b 
+{
+    color: silver;
+}
+
+a:link, a:active, a:visited 
+{
+    color:white;
+}
+
+a:hover
+{
+    color:black !important;
+}
+
+h2
+{
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+
+/*SETARI FOOTER*/
+.footer-container
+{
+    height: 80px;
+    background: darkgreen;
+    opacity: 0.85;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.footer-logo
+{
+    width: 25%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo img
+{
+    height: 100%;
+    width: auto;
+}
+
+.socials
+{
+    font-size: 20px;
+    margin-top: 0;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.socials > p 
+{
+    margin-bottom: -5px;
+}
+
+.socials-names:hover, i:hover
+{
+    cursor: pointer;
+}
+.legal{
+    margin-top: 0;
+    margin-left: 20px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: 35%;
+}
+.legal > p 
+{
+    font-size: 10px;
+    margin-bottom: -5px;
+    text-align: center;
+}
+.legal > h6 {
+    margin-bottom: -5px;
+    top: 0;
+}

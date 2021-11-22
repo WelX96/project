@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Futuretech Corp</title>
+    <link rel="icon" href="/images/ico_logo/futuretech.png" type="image/icon type">
+    <link href='https://fonts.googleapis.com/css?family=Zen Dots' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/css/contact.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</head>
+
+<body>
+    <div id="header" class="head-container">
+        <div id="navLogo" class="logobg">
+            <img class="animate__animated animate__fadeInUpBig" src="/images/ico_logo/futuretech.png" alt="error">
+        </div>
+       
+        <nav class="navbar navbar-expand-sm  navbar-dark">
+            <a class="nav-link" href="/index.html" style="font-size: inherit; margin-left: 25px;">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/firearms.html">Firearms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/accs.html">Ammu and accesories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand active-link" href="/pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<!--                                                     -->
+
+<div id="m-container" class="main-container container">
+    <div class="row">
+        <div class="col-sm-12 top-img" id="topImg">
+            <img src="/images/contact/ammu landscape.jpg" alt="ammunition-error" style="width: inherit;">
+        </div>
+    </div>  
+    <div class="row g-0">
+        <div id="leftImg" class="col-sm-4">
+            <img id="leftImg2" src="/images/contact/gun portrait.jpg" alt=" gun error">
+        </div>
+        <div id="form" class="col-sm-8">
+            <form action ="#" id="form2">
+                <div id="form3">
+                    <label for="numPren" class="form-label">Full name</label>
+                    <input required type="text" class="form-control mb-2" id="numPren" placeholder="Your full name here...">
+                    <label for="age" class="form-label">Age - <span id="age"></span></label><br>
+                    <input required type="range" min="18" max="60" value="30" class="slider form-range mb-2" id="range">
+                    <label for="mail" class="form-label">E-mail</label>
+                    <input required type="email" class="form-control mb-2" id="mail" placeholder="Please use a valid e-mail address">
+                    <label for="permit" class="form-label">Do you own a permit?</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="permit">
+                        <label class="form-check-label mb-2" for="permit">
+                            Yes, i own a permit for weapon aquisition and usage
+                        </label>
+                    </div>
+                    <select class="form-select mb-2" aria-label="Default select example" id="topic">
+                        <option value="0" selected>Select one of the topics bellow:</option>
+                        <option value="Weapon aquisition">Weapon aquisition</option>
+                        <option value="Ammunition aquisition">Ammunition aquisition</option>
+                        <option value="Accesories aquisition">Accesories aquisition</option>
+                        <option value="9mm Ammunition order"><strong>9mm Ammunition order</strong></option>
+                        <option value="Other topic">Other topic</option>
+                    </select>
+                    <label for="msg" class="form-label">Please tell us how can we help you regarding your chosen topic:</label>
+                    <textarea required class="form-control txtar mb-2" id="msg"></textarea>
+                    <input class="btn btn-primary" type="submit" value="Send your request">
+                    <br>
+                </div>
+                <span id="submit"></span>
+            </form>
+        </div>
+    </div>
+</div>
+<!--                                                     -->
+    <div style="margin-bottom: 100px ;"></div>
+    <footer class ="fixed-bottom footer-container">
+        <div class="footer-logo"> 
+            <img src="/images/ico_logo/futuretech.png" alt="futuretech">
+        </div>    
+            <div class="socials" >
+                <p>
+                    <i class="bi bi-facebook"><span class="socials-names">Facebook</span></i>
+                </p>
+                <p>
+                    <i class="bi bi-instagram"><span class="socials-names">Instagram</span></i>
+                </p>
+                <p>
+                    <i class="bi bi-youtube"><span class="socials-names">Youtube</span></i>
+                </p>
+            </div>
+            <div class="legal">
+                <h6>Contact</h6>
+                <p>Adress: 400 Louisville Rd, Frankfort, INDIANA</p>
+                <p>E-mail: futuretech@shop.com</p>
+                <p>Phone: 555-221-7415</p>
+
+
+            </div>
+    </footer>
+
+
+
+
+    <script src="/script/frontscripts.js"></script>
+    <script src="/script/contact.js"></script>
+
+</body>
+
+</html>

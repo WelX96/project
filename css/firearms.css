@@ -1,0 +1,47 @@
+@import url("/css/index.css");
+
+#filter
+{
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 5px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.select
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select > p , .select > input
+{
+    align-self: center ;
+    margin: 0;
+}
+
+.forClick, input[type="checkbox"]
+{
+    cursor: pointer;
+}
+
+.card-title
+{
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card-body > p 
+{
+    border-width: 0px 2px 2px 2px;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid;
+    border-color: black;
+}
