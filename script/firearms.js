@@ -81,7 +81,7 @@ function reset()
     let index3=reset.length;
     for( let i=0; i < index3;i++)
       {
-        reset[i].previousElementSibling.defaultChecked=false;
+        reset[i].previousElementSibling.checked=false;
         //console.log(reset[i].previousElementSibling.defaultChecked);
       }
 }
@@ -91,12 +91,12 @@ function reset()
 $(".forClick").click(function(){
   let click=$(this);
   //console.log(click[0]);
-  if (click[0].previousElementSibling.defaultChecked==true)
+  if (click[0].previousElementSibling.checked==true)
   {
-    click[0].previousElementSibling.defaultChecked=false;
+    click[0].previousElementSibling.checked=false;
   }
   else{
-    click[0].previousElementSibling.defaultChecked=true;
+    click[0].previousElementSibling.checked=true;
   }
 
   //console.log(click[0].previousElementSibling);
